@@ -75,7 +75,7 @@ Each variable is described following.
 * momentum: Momentum.
 * weight_decay: Weight decay.
 * clip: Clipping gradients.
-* partience: The number of times to stop training if the loss does not decrease.
+* partience: The number of epochs from when the loss stops decreasing to when training stops.
 * worker_num: The number of clients.
 * participation_rate: The rate of clients who participate per global communication rounds.
 * sample_num: The number of clients who participate per global communication rounds. (automatically determined)
