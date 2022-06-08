@@ -64,7 +64,7 @@ We currently implemented the following methods:
 
 ## Usage
 You can conduct experiments by running the cells in order from the top.
-The experimental setups can be modified by changing the hyperparameters in the `class Argments`.
+The experimental setups can be modified by changing the hyperparameters in the `class Argments()`.
 Each variable is described following.
 
 * batch_size: Batch size at training.
