@@ -44,7 +44,7 @@ These datasets should be prepared in advance by followings:
   MNIST and CIFAR-10 do not require preparation. 
   If you use the CIFAR-10 dataset, you run the `get_dataset` function included in each code and can download the dataset under `data`.
 
-## CODE
+## Code
 The jupyter notebook files for each method are available in `./code`.
 We currently implemented the following methods:
 
@@ -60,7 +60,7 @@ We currently implemented the following methods:
 * pFedMe (C. T. Dinh et al., Personalized federated learning with moreau envelopes, NIPS 2020)
 
 
-## USAGE
+## Usage
 You can conduct experiments by running the cells in order from the top.
 The experimental setup can be modified by changing the hyperparameters in the `class Argments`.
 Each variable is described following.
