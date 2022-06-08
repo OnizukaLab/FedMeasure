@@ -37,7 +37,7 @@ These datasets should be prepared in advance by followings:
   We have processed these datasets to be used as a Dataloader.
   Please download FEMNIST and Shakespeare dataset [here](https://drive.google.com/file/d/1NfmKUFeDogD6DlXkbyhbXI197F3ZfZ02/view?usp=sharing), unzip it and put the `federated_trainset_femnist.pickle`, `federated_testset_femnist.pickle`, `federated_trainset_shakespeare.pickle`, and `federated_testset_shakespeare.pickle` under `./data`.
 
-  Sent140 are provided by the LEAF repository, which should be downloaded from [LEAF](https://github.com/TalwalkarLab/leaf/) by using the following commands:
+  Sent140 are provided by the LEAF repository, which should be downloaded from [LEAF](https://github.com/TalwalkarLab/leaf/) by using the following commands:<br>
   `./preprocess.sh -s niid --sf 1.0 -k 50 -tf 0.8 -t sample`
   After downloading the dataset, put folder leaf-master/data/sent140 into `./data` in this repository.
 
