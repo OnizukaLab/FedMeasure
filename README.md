@@ -44,7 +44,7 @@ These datasets should be prepared in advance by followings:
   After downloading the dataset, put folder leaf-master/data/sent140 into `./data` in this repository.
 
   MNIST and CIFAR-10 do not require preparation. 
-  If you use the CIFAR-10 dataset, you run the `get_dataset` function included in each code and can download the dataset under `data`.
+  If you use the CIFAR-10 dataset, you run the `get_dataset` function included in each code and can download the dataset under `./data`.
 
 ## Code
 The jupyter notebook files for each method are available in `./code`.
