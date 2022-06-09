@@ -43,8 +43,10 @@ These datasets should be prepared in advance by followings:
   <br>
   After downloading the dataset, put folder leaf-master/data/sent140 into `./data` in this repository.
 
-  MNIST and CIFAR-10 do not require preparation. 
-  If you use the CIFAR-10 dataset, you run the `get_dataset` function included in each code and can download the dataset under `./data`.
+  If you use MNIST and CIFAR-10, you set any values for `alpha_label` and `alpha_size` in `class Argments()` and run the `get_dataset` function included in each code and 
+  Then, you can download the dataset under `./data`.
+  
+  
 
 ## Code
 The jupyter notebook files for each method are available in `./code`.
@@ -80,10 +82,11 @@ Each variable is described following.
 * participation_rate: The rate of clients who participate per global communication rounds.
 * sample_num: The number of clients who participate per global communication rounds. (automatically determined)
 * total_data_rate: The rate of data samples to use. (only using for MNIST and CIFAR-10)
-* device: Machine information 
-* criterion: Loss function
-* alpha_label: The degree of label heterogeneity (only using for MNIST and CIFAR-10)
-* alpha_size: The degree of data size heterogeneity (only using for MNIST and CIFAR-10)
+* device: Machine informatio.
+* criterion: Loss function.
+* alpha_label: The degree of label heterogeneity. (only using for MNIST and CIFAR-10)
+* alpha_size: The degree of data size heterogeneity. (only using for MNIST and CIFAR-10)
+* dataset_name: Name of the dataset to be used.
 
 The list `dataset_names` contains the names of the available datasets.
 Each dataset can be used by setting `dataset_name = dataset_names[i]` where `i` is the following number.
