@@ -43,7 +43,7 @@ These datasets should be prepared in advance by followings:
   <br>
   After downloading the dataset, put folder leaf-master/data/sent140 into `./data` in this repository.
 
-  If you use MNIST and CIFAR-10, you set any values for `alpha_label` and `alpha_size` in `class Argments()` and run the `get_dataset` function included in each code and 
+  If you use MNIST and CIFAR-10, you set any values for `alpha_label` and `alpha_size` in `class Argments()` and run the `get_dataset` function included in each code
   Then, you can download the dataset under `./data`.
   
   
@@ -65,37 +65,29 @@ We currently implemented the following methods:
 
 
 ## Usage
-You can conduct experiments by running the cells in order from the top.
+You can conduct experiments by running the cells in order from the top. 
 The experimental setups can be modified by changing the hyperparameters in the `class Argments()`.
 Each variable is described following.
 
-* batch_size: Batch size at training.
-* test_batch: Batch size at validation and testing.
-* global_epochs: The number of global communication rounds.
-* local_epochs: The number of local training.
-* lr: Learning rate.
-* momentum: Momentum.
-* weight_decay: Weight decay.
-* clip: Clipping gradients.
-* partience: The number of epochs from when the loss stops decreasing to when training stops.
-* worker_num: The number of clients.
-* participation_rate: The rate of clients who participate per global communication rounds.
-* sample_num: The number of clients who participate per global communication rounds. (automatically determined)
-* total_data_rate: The rate of data samples to use. (only using for MNIST and CIFAR-10)
-* device: Machine informatio.
-* criterion: Loss function.
-* alpha_label: The degree of label heterogeneity. (only using for MNIST and CIFAR-10)
-* alpha_size: The degree of data size heterogeneity. (only using for MNIST and CIFAR-10)
-* dataset_name: Name of the dataset to be used.
-
-The list `dataset_names` contains the names of the available datasets.
-Each dataset can be used by setting `dataset_name = dataset_names[i]` where `i` is the following number.
-
-* 0: FEMNIST
-* 1: Shakespeare
-* 2: Sent140
-* 3: MNIST
-* 4: CIFAR-10
+* `batch_size`: Batch size at training.   \[Default is `20`\]
+* `test_batch`: Batch size at validation and testing.   \[Default is `1000`\]
+* `global_epochs`: The number of global communication rounds.   \[Default is `300`\]
+* `local_epochs`: The number of local training.   \[Default is `2`\]
+* `lr`: Learning rate.  \[Default is `10**(-3)`\]
+* `momentum`: Momentum.   \[Default is `0.9`\]
+* `weight_deca`y: Weight decay.   \[Default is `10**-4.0`\]
+* `clip`: Clipping gradients.   \[Default is `20.0`\]
+* `partience`: The number of epochs from when the loss stops decreasing to when training stops.   \[Default is `300`\]
+* `worker_num`: The number of clients.  \[Default is `20`\]
+* `participation_rate`: The rate of clients who participate per global communication rounds.  \[Default is `1`\]
+* `sample_num`: The number of clients who participate per global communication rounds. (automatically determined)
+* `total_data_rate`: The rate of data samples to use. (only using for MNIST and CIFAR-10)   \[Default is `1`\]
+* `unlabeleddata_size`: The number of unlabeled data samples.   \[Default is `1000`\]
+* `device`: Machine informatio.   \[Default is `torch.device('cuda:0'if torch.cuda.is_available() else'cpu')`\]
+* `criterion`: Loss function.   \[Default is `nn.CrossEntropyLoss()`\]
+* `alpha_label`: The degree of label heterogeneity. (only using for MNIST and CIFAR-10)   \[Default is `0.5`\]
+* `alpha_size`: The degree of data size heterogeneity. (only using for MNIST and CIFAR-10)  \[Default is `10`\]
+* `dataset_name`: Name of the dataset to be used.   \[Default is `FEMNIST`\]
 
 
 When the last cell is executed, the result of the experiment is stored in `./result/`.
