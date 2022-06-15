@@ -71,7 +71,7 @@ We currently implemented the following methods:
 * FedPer (M. G. Arivazhagan et al., Federated learning with personalization layers, arXiv 2019)
 * FedRep (L. Collins et al., Exploiting shared representations for personalized federated learning, ICML 2021)
 * Ditto (T. Li et al., Ditto: Fair and robust federated learning through personalization, ICML 2021)
-* pFedMe (C. T. Dinh et al., Personalized federated learning with moreau envelopes, NIPS 2020)
+* pFedMe (C. T. Dinh et al., Personalized federated learning with moreau envelopes, NeurIPS 2020)
 
 
 ## Usage
