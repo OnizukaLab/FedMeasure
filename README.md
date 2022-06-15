@@ -46,7 +46,17 @@ These datasets should be prepared in advance by followings:
   If you use MNIST and CIFAR-10, you set any values for `alpha_label` and `alpha_size` in `class Argments()` and run the `get_dataset` function included in each code
   Then, you can download the dataset under `./data`.
   
-  
+
+## Model
+For FEMNIST and MNIST you can use CNN, and for Shakespeare you can use LSTM.
+For CIFAR-10, you can use VGG.
+For Sent140, you can use a pre-trained 300-dimensional GloVe embedding and train RNN with an LSTM module.
+
+In order to use a pre-trained 300-dimensional GloVe embedding, please download `glove.6B.300d.txt` from [here](https://nlp.stanford.edu/projects/glove/).
+Next, from [the LEAF repository](https://github.com/TalwalkarLab/leaf/tree/master/models), conduct  `sent140/get_embs.py -f fp`, where fp is the file path to the `glove.6B.300d.txt`, to generate `embs.json`.
+Then, put `embs.json` in `/models/` of this repository.
+
+
 
 ## Code
 The jupyter notebook files for each method are available in `./code`.
