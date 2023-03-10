@@ -1,12 +1,12 @@
-# FedBench
+# FedMeasure
 
-FedBench is a Jupyter notebook-based tool, which supports performing easily experimental studies with various methods, experimental setups, and datasets.
+FedMeasure is a Jupyter notebook-based tool, which supports performing easily experimental studies with various methods, experimental setups, and datasets.
 
 ## Resources
 Paper: An Empirical Study of Personalized Federated Learning
 
 ## Setup
-FedBench needs the following packages to be installed.
+FedMeasure needs the following packages to be installed.
 
 * PyTorch
 * Torchvision
@@ -20,7 +20,7 @@ Please install packages with `pip install -r requirements.txt`.
 
 
 ## Data
-FedBench can use five datasets: FEMNIST, Shakespeare, Sent140, MNIST, and CIFAR-10.
+FedMeasure can use five datasets: FEMNIST, Shakespeare, Sent140, MNIST, and CIFAR-10.
 
 | Dataset     | Overview                                 | Task                      | 
 | ----------- | ---------------------------------------- | ------------------------- | 
