@@ -2,9 +2,6 @@
 
 FedMeasure is a Jupyter notebook-based tool, which supports performing easily experimental studies with various methods, experimental setups, and datasets.
 
-## Resources
-Paper: An Empirical Study of Personalized Federated Learning
-
 ## Setup
 FedMeasure needs the following packages to be installed.
 
